@@ -6,6 +6,8 @@ var jsArray = [
     './bower_components/fancyBox/source/jquery.fancybox.js',
     './bower_components/swiper/dist/js/swiper.js',
     './bower_components/smart-app-banner/smart-app-banner.js',
+    './js/ticker/jquery.ease-ticker.js',
+    
 
     //Angular Libs
     './bower_components/angular/angular.min.js',

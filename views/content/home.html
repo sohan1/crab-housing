@@ -1,26 +1,56 @@
-<div class="container">
+<div>
 
-    <flex-slider flex-slide="s in mySlides" prev-text="" next-text="">
+    <flex-slider flex-slide="s in mySlides track by index" prev-text="" next-text="">
         <li>
-            <img ng-src="{{s}}">
+            <img ng-src="{{s}}" class="img-responsive">
         </li>
     </flex-slider>
-
+    <!--<div class="container-fluid">
+        <div class="row">
+            <div class="col-sm" ng-repeat="s in mySlides">
+                <a ng-href="{{s}}" rel="gal" fancybox>
+                <img ng-src="{{s}}" class="full-img">
+            </a>
+            </div>
+        </div>
+    </div>-->
     <!--<ks-swiper-container loop="true" autoplay="3000" pagination-hide="false" show-nav-buttons="true" space-between="5" override-parameters="{'effect':'fade'}">
         <ks-swiper-slide class="swiper-slide" ng-repeat="s in mySlides">
             <img ng-src="{{s}}" class="full-img">
         </ks-swiper-slide>
     </ks-swiper-container>-->
+    <div class="container">
+        <div class="row">
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="img/home/computerized-system.jpeg" class="img-responsive" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Fully computerized</h5>
+                        <!--<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This
+                            card has even longer content than the first to show that equal height action.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="img/home/Our-Facilities.png" class="img-responsive" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Fast Track Facilities</h5>
+                        <!--<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This
+                            content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="img/home/High-speed-network.jpg" class="img-responsive" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Speedy &amp; Quickly</h5>
+                    </div>
+                </div>
 
-    <div class="row">
-        <div class="col-sm" ng-repeat="s in mySlides">
-            <a ng-href="{{s}}" rel="gal" fancybox>
-                <img ng-src="{{s}}" class="full-img">
-            </a>
+            </div>
         </div>
         <!--<div class="col-md-2">
             <a class="various fancybox.iframe" href="http://www.youtube.com/embed/L9szn1QQfas?autoplay=1" fancybox><img ng-src="http://img.youtube.com/vi/L9szn1QQfas/maxresdefault.jpg" class="full-img"></a>
         </div>-->
     </div>
-
 </div>

@@ -1,19 +1,44 @@
-<header ng-controller="headerctrl">
-    <nav class="navbar navbar-light navbar-expand-sm fixed-top">
+<header ng-controller="headerctrl" class="fixed-top">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg h15-info-bar">
+            <a class="navbar-brand" ui-sref="home"><img src="img/logo.jpg" alt="logo" width="100"></a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#h15-info" aria-controls="h15-info"
+                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="sl-icon-options-vertical"></span>
+                            </button>
+            <div class="navbar-collapse collapse" id="h15-info" style="">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <div class="display-6 m-r-10">
+                                <h1 class="text-uppercase title"> The BARC Employees' CO-operation credit society LTD. <small>(1961)</small></h1>
+                                <div>Old R-5 Shed, Behind RLG, Trombay
+                            Mumbai, 400 085 (Maharastra)                             
+                            </div>
+                            </div>
+                        </a>
+                    </li>
+                    <!--<li class="nav-item">
+                        <a class="nav-link">
+                            <div class="display-6 m-r-10"><i class="icon-Location-2"></i></div>
+                            <div><small>Old R-5 Shed, Behind RLG, <br> Trombay
+                            Mumbai, 400 085 (Maharastra)                             
+                            </small></div>
+                        </a>
+                    </li>-->
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <small>Regd. No.</small>
+                            <div><h6> 29770</h6>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <nav class="navbar navbar-light navbar-expand-sm bg-color">
         <div class="container">
-            <!--<div class="hamburger pointer" ng-click="getnav();">
-                <div class="menu-line">
-                    <span class="icon-bar box-shadow {{onebar}}"></span>
-                    <span class="icon-bar box-shadow {{secondbar}}"></span>
-                    <span class="icon-bar box-shadow third-line {{thirdbar}}"></span>
-                </div>
-            </div>-->
-            <a class="navbar-brand" ui-sref="home"><img src="img/logo.png" alt="logo" width="80"></a>
-            <!--<div>
-                <h4>
-                    B. A. R. C. Employees' Cooperative Credit Society Ltd. Mumbai
-                </h4>
-            </div>-->
             <div class="collapse navbar-collapse" id="nav-collapse">
                 <ul class="navbar-nav mr-auto" ng-include="template.menu"></ul>
             </div>
