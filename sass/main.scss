@@ -190,10 +190,26 @@ a,
 
 footer {
     font-size: 12px;
-    background-color: #eee;
+    background-color: #f5c402;
     padding: 10px 0;
     p {
         margin: 0;
+        color: #fff;
+    }
+}
+
+.card-deck {
+    margin-bottom: 50px;
+    .card {
+        h5.card-title {
+            margin: 0;
+            letter-spacing: 1px;
+            font-weight: 400;
+        }
+        img.card-img-top.doneLoading {
+            border-bottom: 1px solid #ddd;
+            padding: 0px;
+        }
     }
 }
 
@@ -314,9 +330,11 @@ footer {
         }
     }
 }
-.flexslider{
+
+.flexslider {
     border: none;
 }
+
 .sidemenu {
     background: $black;
     padding: 50px 0;
@@ -387,6 +405,60 @@ h1.title {
 .navbar-light .navbar-nav .nav-link:focus {
     background: $white;
     margin-left: 1px;
+}
+
+.ticker1 {
+    .list {
+        padding: 10px 20px;
+        border-bottom: 1px solid #ddd;
+        display: block;
+        a {
+            color: #0c8ccb;
+        }
+    }
+    .innerWrap {
+        width: 100%;
+    }
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.title-bar {
+    padding: 8px 20px;
+    background: #362576;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    .title {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+}
+
+.objectives {
+    ul {
+        padding: 0;
+        list-style: none;
+        margin: 0;
+        li {
+            padding: 8px 15px;
+            border-bottom: 1px solid #ddd;
+        }
+    }
+}
+
+.schemes {
+    padding: 80px 0 100px;
+    .img-holder {
+        padding: 30px;
+    }
+    .fig-title {
+        font-size: 16px;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
 }
 
 @import "fancybox-override";
