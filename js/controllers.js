@@ -8,6 +8,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
         $scope.mySlides = [
             '../img/home-banner/3.jpg',
+            '../img/home-banner/4.jpg',
             // '../img/home-banner/2.jpg',
             // '../img/home-banner/3.jpg',
         ];
@@ -79,6 +80,12 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     .controller('AboutCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
         $scope.template = TemplateService.changecontent("about"); //Use same name of .html file
         $scope.menutitle = NavigationService.makeactive("About"); //This is the Title of the Website
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+    })    
+    .controller('CommitteeCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+        $scope.template = TemplateService.changecontent("committee"); //Use same name of .html file
+        $scope.menutitle = NavigationService.makeactive("Committee"); //This is the Title of the Website
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
     })

@@ -1,12 +1,11 @@
 <div>
-
-    <flex-slider flex-slide="s in mySlides track by index" prev-text="" next-text="">
+    <flex-slider flex-slide="s in mySlides track by $index" prev-text="" next-text="">
         <li>
-            <img ng-src="{{s}}" class="img-responsive">
+            <img ng-src="{{s}}" class="img-fluid">
         </li>
     </flex-slider>
     <div class="container">
-        <div class="ticker">
+        <div class="ticker paddings">
             <div class="row">
                 <div class="col-md-6">
                     <div class="title-bar">
@@ -57,6 +56,8 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container">
         <div class="schemes">
             <div class="row">
                 <div class="col-md-3">
@@ -80,16 +81,113 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="img-holder"><img src="img/home/children.svg" alt="" class="img-fluid"></div>
+                    <div class="img-holder"><img src="img/home/piggybank.svg" alt="" class="img-fluid"></div>
                     <div class="fig-title text-center text-uppercase">
-                        BALBHAVISHYA NIDHI
+                        Pigi Bank
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="content_info">
+        <div class="content_resalt padding-bottom borders">
+            <!-- title-vertical-line-->
+            <div class="title-vertical-line">
+                <h2><strong><span>Loan and Scheme</span></strong></h2>
+                <p class="lead">A range of services are provided all under one roof. Some of the highlighted services are :</p>
+            </div>
+            <!-- End title-vertical-line-->
 
-    <div class="container">
+            <!-- Info Resalt-->
+            <div class="paddings">
+                <!-- Container Area - services-process -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- services-process -->
+                            <div class="services-process">
+
+                                <!-- item-service-process -->
+                                <div class="item-service-process color-bg-2">
+                                    <div class="head-service-process">
+                                        <a href="deposits.html"><i class="fa fa-star"></i>
+                                                <h3>DEPOSITS</h3></a>
+                                    </div>
+                                    <div class="divisor-service-process">
+                                        <span class="circle-top">2</span>
+                                        <span class="circle"></span>
+                                    </div>
+                                    <div class="info-service-process">
+                                        <h3>Deposit Schemes</h3>
+                                        <p>Dnyandeep endows its customers with a wide array of short term as well as long term
+                                            deposit schemes with an attractive interest...<br><a href="deposits.html">read more</a></p>
+                                    </div>
+                                </div>
+                                <!-- End item-service-process -->
+
+                                <!-- item-service-process -->
+                                <div class="item-service-process color-bg-3">
+                                    <div class="head-service-process">
+                                        <a href="loans.html"><i class="fa fa-star"></i>
+                                                <h3>LOANS</h3></a>
+                                    </div>
+                                    <div class="divisor-service-process">
+                                        <span class="circle-top">3</span>
+                                        <span class="circle"></span>
+                                    </div>
+                                    <div class="info-service-process">
+                                        <h3>Easy Loans</h3>
+                                        <p>Loans are offered to suit every individual’s requirement based on their earnings,
+                                            securities and repayment capacity...<br><a href="loans.html">read more</a></p>
+                                    </div>
+                                </div>
+                                <!-- End item-service-process -->
+
+                                <!-- item-service-process -->
+                                <div class="item-service-process color-bg-4">
+                                    <div class="head-service-process">
+                                        <a href="safe-deposite-vaults.html"><i class="fa fa-star"></i>
+                                                <h3>SAFE DEPOSIT</h3></a>
+                                    </div>
+                                    <div class="divisor-service-process">
+                                        <span class="circle-top">4</span>
+                                        <span class="circle"></span>
+                                    </div>
+                                    <div class="info-service-process">
+                                        <h3>Safe Deposit Vault</h3>
+                                        <p>Your money is secured with us. Similarly the Safe Deposit Vault facility is provided
+                                            to valued customers at various branches...<br><a href="safe-deposite-vaults.html">read more</a></p>
+                                    </div>
+                                </div>
+                                <!-- End item-service-process -->
+                                <!-- item-service-process -->
+                                <div class="item-service-process color-bg-1">
+                                    <div class="head-service-process">
+                                        <a href="deposits.html"><i class="fa fa-star"></i>
+                                                <h3>DEPOSITS</h3></a>
+                                    </div>
+                                    <div class="divisor-service-process">
+                                        <span class="circle-top">2</span>
+                                        <span class="circle"></span>
+                                    </div>
+                                    <div class="info-service-process">
+                                        <h3>Deposit Schemes</h3>
+                                        <p>Dnyandeep endows its customers with a wide array of short term as well as long term
+                                            deposit schemes with an attractive interest...<br><a href="deposits.html">read more</a></p>
+                                    </div>
+                                </div>
+                                <!-- End item-service-process -->
+                            </div>
+                            <!-- End services-process-->
+                        </div>
+                    </div>
+                </div>
+                <!-- End Container Area - services-process -->
+            </div>
+            <!-- End Info Resalt-->
+        </div>
+    </div>
+    <!--<div class="container">
         <div class="row">
             <div class="card-deck mb20">
                 <div class="card">
@@ -113,8 +211,5 @@
 
             </div>
         </div>
-        <!--<div class="col-md-2">
-            <a class="various fancybox.iframe" href="http://www.youtube.com/embed/L9szn1QQfas?autoplay=1" fancybox><img ng-src="http://img.youtube.com/vi/L9szn1QQfas/maxresdefault.jpg" class="full-img"></a>
-        </div>-->
-    </div>
+    </div>-->
 </div>
