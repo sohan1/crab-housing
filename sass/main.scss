@@ -5,6 +5,7 @@
 @import "../bower_components/swiper/dist/css/swiper.min.css";
 @import "../bower_components/smart-app-banner/smart-app-banner.css";
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900');
+
 /* Bootstrap Variables Goes Here */
 
 // Colors
@@ -211,6 +212,9 @@ footer {
     .list>li+li {
         margin-top: 10px;
     }
+    p.contant-link {
+        margin-bottom: 10px;
+    }
     .opening-hours {
         h5 {
             margin: 10px 0 0;
@@ -305,6 +309,7 @@ footer {
 .swiper-container-rtl .swiper-button-prev {
     background-image: url(../img/next.png);
 }
+
 
 /* Start writing sass here */
 
@@ -580,7 +585,7 @@ span.color-blue {
 
 .item-service-process {
     display: inline-block;
-    width: 32.2%;
+    width: 39.2%;
     margin-left: -100px;
     text-align: center;
     position: relative;
@@ -833,7 +838,7 @@ span.color-blue {
                 color: #2f1f72 !important;
             }
         }
-        :after {
+         :after {
             content: '';
             position: absolute;
             top: 0;
