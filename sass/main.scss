@@ -510,6 +510,13 @@ span.color-blue {
         letter-spacing: 1px;
         font-weight: 600;
     }
+    ul {
+        padding: 5px 10px;
+        li {
+             padding: 5px 10px;
+            text-align: center;
+        }
+    }
 }
 
 //container-home
@@ -865,6 +872,14 @@ span.color-blue {
         line-height: 150%;
         color: #777;
     }
+}
+
+//tabel
+.table-primary,
+.table-primary>th,
+.table-primary>td {
+    background-color: #2f1f72;
+    color: #fff;
 }
 
 @import "fancybox-override";

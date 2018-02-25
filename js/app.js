@@ -23,10 +23,20 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
             templateUrl: "views/template.html",
             controller: 'CommitteeCtrl'
         })
+        .state('schemes', {
+            url: "/schemes",
+            templateUrl: "views/template.html",
+            controller: 'SchemesCtrl'
+        })
         .state('about', {
             url: "/about",
             templateUrl: "views/template.html",
             controller: 'AboutCtrl'
+        })
+        .state('contact', {
+            url: "/contact",
+            templateUrl: "views/template.html",
+            controller: 'ContactCtrl'
         })
         .state('form', {
             url: "/form",
