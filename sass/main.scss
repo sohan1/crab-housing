@@ -513,7 +513,7 @@ span.color-blue {
     ul {
         padding: 5px 10px;
         li {
-             padding: 5px 10px;
+            padding: 5px 10px;
             text-align: center;
         }
     }
@@ -807,9 +807,11 @@ span.color-blue {
 .team-body {
     h6 {
         margin-bottom: 2px;
+        font-size: 15px;
     }
     p {
         color: #2f00ff;
+        font-size: 15px;
     }
 }
 
@@ -882,5 +884,12 @@ span.color-blue {
     color: #fff;
 }
 
+//card
+.card-pad {
+    padding: 1rem 1rem 0;
+}
+.color-blue{
+    color: $blue;
+}
 @import "fancybox-override";
 @import "mobile";
