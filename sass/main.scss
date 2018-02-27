@@ -488,7 +488,7 @@ span.color-blue {
     padding: 40px 0 100px;
     .img-holder {
         padding: 40px;
-        width: 80%;
+        width: 75%;
         margin: 0 auto;
         border-radius: 50%;
         border: 5px solid #ddd;
@@ -860,6 +860,11 @@ span.color-blue {
     }
 }
 
+.lead {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
 //about
 .content_info {
     h2 {
@@ -888,8 +893,10 @@ span.color-blue {
 .card-pad {
     padding: 1rem 1rem 0;
 }
-.color-blue{
+
+.color-blue {
     color: $blue;
 }
+
 @import "fancybox-override";
 @import "mobile";
