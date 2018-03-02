@@ -38,6 +38,11 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
             templateUrl: "views/template.html",
             controller: 'DownloadsCtrl'
         })
+        .state('reports', {
+            url: "/reports",
+            templateUrl: "views/template.html",
+            controller: 'ReportsCtrl'
+        })
         .state('contact', {
             url: "/contact",
             templateUrl: "views/template.html",
