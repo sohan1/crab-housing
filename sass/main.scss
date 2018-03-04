@@ -5,6 +5,7 @@
 @import "../bower_components/swiper/dist/css/swiper.min.css";
 @import "../bower_components/smart-app-banner/smart-app-banner.css";
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900');
+
 /* Bootstrap Variables Goes Here */
 
 // Colors
@@ -308,6 +309,7 @@ footer {
 .swiper-container-rtl .swiper-button-prev {
     background-image: url(../img/next.png);
 }
+
 
 /* Start writing sass here */
 
@@ -845,7 +847,7 @@ span.color-blue {
                 color: #2f1f72 !important;
             }
         }
-        :after {
+         :after {
             content: '';
             position: absolute;
             top: 0;
@@ -894,6 +896,40 @@ span.color-blue {
 
 .color-blue {
     color: $blue;
+}
+
+.custom-panel {
+    .panel-title {
+        margin: 0;
+        padding: 12px 20px;
+        background: #2f1f72;
+        border-bottom: 1px solid #fff;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        a {
+            display: block;
+            color: #fff;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    .panel-collapse {
+        padding: 10px 20px;
+    }
+}
+
+.tab-custom {
+    .tab-content {
+        padding: 15px 0px;
+    }
+    .nav-tabs .nav-link {
+        background: #2f1f72;
+        color: #fff;
+        border-radius: 0px;
+        border-right: 1px solid #fff;
+    }
 }
 
 @import "fancybox-override";

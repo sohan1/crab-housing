@@ -43,6 +43,11 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
             templateUrl: "views/template.html",
             controller: 'ReportsCtrl'
         })
+        .state('notices-circulars', {
+            url: "/notices-circulars",
+            templateUrl: "views/template.html",
+            controller: 'NoticesCircularsCtrl'
+        })
         .state('contact', {
             url: "/contact",
             templateUrl: "views/template.html",

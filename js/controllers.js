@@ -110,7 +110,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             {
                 title: 'Dynamic Group Header - 2',
                 content: 'Dynamic Group Body - 2'
-            }];
+            }
+        ];
     })
     .controller('DownloadsCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
         $scope.template = TemplateService.changecontent("downloads"); //Use same name of .html file
@@ -123,6 +124,12 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.menutitle = NavigationService.makeactive("Notices & Circulars"); //This is the Title of the Website
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
+        $scope.oneAtATime = true;
+
+  $scope.tabs = [
+    { title:'2011', content:'Dynamic content 1' },
+    { title:'2012', content:'Dynamic content 2', disabled: true }
+  ];
     })
     .controller('RulesAmendmentsCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
         $scope.template = TemplateService.changecontent("rules-amendments"); //Use same name of .html file

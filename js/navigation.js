@@ -35,7 +35,7 @@ var navigationservice = angular.module('navigationservice', [])
     }, {
         name: "Notices & Circulars",
         classis: "active",
-        anchor: "notice-circulars"
+        anchor: "notices-circulars"
     }, {
         name: "	Rules & Amendments",
         classis: "active",

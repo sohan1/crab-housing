@@ -6,23 +6,22 @@
                     <i class="fa fa-home"></i>
                 </a>
             </li>
-            <li>Reports</li>
+            <li>Notice and Circulars</li>
         </ul>
     </div>
 </div>
-<h1 align="center" class="lead text-uppercase text-center" style="padding:0; margin:50px 0; font-size:2rem;letter-spacing: 2px;">Reports</h1>
-<div class="reports">
+<h1 align="center" class="lead text-uppercase text-center" style="padding:0; margin:50px 0; font-size:2rem;letter-spacing: 2px;">Notice and Circulars</h1>
+<div class="notice-circular">
     <div class="container">
         <div class="about-img">
-            <img src="img/report.jpg" alt="" class="img-fluid">
+            <img src="img/notice.jpg" alt="" class="img-fluid">
         </div>
     </div>
     <div class="container">
         <div class="paddings">
-            <h1 align="center" class="lead text-uppercase text-center" style="padding:0; margin:10px 0; font-size:1.2rem;letter-spacing: 2px;">Annual Report</h1>
-            <div class="custom-panel">
-                <uib-accordion close-others="oneAtATime">
-                    <div uib-accordion-group class="panel-default" heading="{{group.title}}" ng-repeat="group in groups">
+            <div class="tab-custom">
+                <uib-tabset active="active">
+                    <uib-tab index="$index + 1" ng-repeat="tab in tabs" heading="{{tab.title}}" disable="tab.disabled">
                         <table class="table table-responsive">
                             <thead>
                                 <tr class="table-primary">
@@ -40,8 +39,8 @@
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
-                </uib-accordion>
+                    </uib-tab>
+                </uib-tabset>
             </div>
         </div>
     </div>
