@@ -31,12 +31,12 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td align="left">27.12.2017</td>
-                                    <td align="left">Regd. KYC (Download KYC Form)</td>
-                                    <td><b><a href="Felicitation_form_English_March-2017.pdf" target="_blank">English</a><br>                        
-                                    <a href="Felicitation_form_Marathi_March-2017.pdf" target="_blank">Marathi</a> </b></td>
-                                </tr>
+                                    <tr ng-repeat="circular in tab.circulars">
+                                        <td align="left">{{circular.date}}</td>
+                                        <td align="left">{{circular.content}}</td>
+                                        <td><b><a href="{{circular.englishUrl}}" target="_blank" ng-if="circular.englishUrl">English</a><br>                        
+                                    <a href="{{circular.marathiUrl}}" target="_blank" ng-if="circular.marathiUrl">Marathi</a> </b></td>
+                                    </tr>
                             </tbody>
                         </table>
                     </uib-tab>

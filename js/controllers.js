@@ -103,13 +103,16 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
         $scope.oneAtATime = true;
 
-        $scope.groups = [{
-                title: 'Dynamic Group Header - 1',
-                content: 'Dynamic Group Body - 1'
+        $scope.reports = [{
+                date: 'Annual Report 2016-17',
+                englishUrl: 'demo.pdf',
+                marathiUrl: 'demo.pdf',
+
             },
             {
-                title: 'Dynamic Group Header - 2',
-                content: 'Dynamic Group Body - 2'
+                date: 'Annual Report 2015-17',
+                englishUrl: 'demo.pdf',
+                marathiUrl: '',
             }
         ];
     })
@@ -126,10 +129,36 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.navigation = NavigationService.getnav();
         $scope.oneAtATime = true;
 
-  $scope.tabs = [
-    { title:'2011', content:'Dynamic content 1' },
-    { title:'2012', content:'Dynamic content 2', disabled: true }
-  ];
+        $scope.tabs = [{
+                title: '2017',
+                circulars: [{
+                    date: '27.12.2017',
+                    content: '56th AGM Notice',
+                    englishUrl: 'demo.pdf',
+                    marathiUrl: 'demo.pdf',
+                },{
+                    date: '27.10.2017',
+                    content: '56th AGM Notice',
+                    englishUrl: 'demo.pdf',
+                    marathiUrl: 'demo.pdf',
+                }]
+            },
+            {
+                title: '2016',
+                 circulars: [{
+                    date: '27.12.2016',
+                    content: '56th AGM Notice',
+                    englishUrl: 'demo.pdf',
+                    marathiUrl: 'demo.pdf',
+                },{
+                    date: '27.10.2016',
+                    content: '56th AGM Notice',
+                    englishUrl: 'demo.pdf',
+                    marathiUrl: 'demo.pdf',
+                }]
+
+            }
+        ];
     })
     .controller('RulesAmendmentsCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
         $scope.template = TemplateService.changecontent("rules-amendments"); //Use same name of .html file

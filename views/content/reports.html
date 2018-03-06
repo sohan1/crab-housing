@@ -19,29 +19,37 @@
     </div>
     <div class="container">
         <div class="paddings">
-            <h1 align="center" class="lead text-uppercase text-center" style="padding:0; margin:10px 0; font-size:1.2rem;letter-spacing: 2px;">Annual Report</h1>
+            <h2 class="lead text-uppercase" style="padding:0; margin:10px 0; font-size:1.5rem;letter-spacing: 2px;">Annual Report</h2>
             <div class="custom-panel">
-                <uib-accordion close-others="oneAtATime">
+                <!--<uib-accordion close-others="oneAtATime">
                     <div uib-accordion-group class="panel-default" heading="{{group.title}}" ng-repeat="group in groups">
                         <table class="table table-responsive">
-                            <thead>
-                                <tr class="table-primary">
-                                    <th><b>Date</b></th>
-                                    <th><b>Details</b></th>
-                                    <th><b>Download Link</b></th>
-                                </tr>
-                            </thead>
                             <tbody>
                                 <tr>
                                     <td align="left">2017</td>
                                     <td align="left">Student Felicitation Application Form (Year: 2016-2017)</td>
-                                    <td><b><a href="Felicitation_form_English_March-2017.pdf" target="_blank">English</a><br>                        
+                                    <td><b><a href="Felicitation_form_English_March-2017.pdf" target="_blank">Download</a><br>                        
                                     <a href="Felicitation_form_Marathi_March-2017.pdf" target="_blank">Marathi</a> </b></td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                </uib-accordion>
+                </uib-accordion>-->
+                <table class="table table-responsive table-report">
+                    <thead>
+                        <tr class="table-primary">
+                            <th><b>Annual Report</b></th>
+                            <th><b>Download Link</b></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="annualreport in reports">
+                            <td align="left">{{annualreport.date}}</td>
+                            <td><b><a href="{{annualreport.englishUrl}}" target="_blank" ng-if="annualreport.englishUrl">English</a><br>                        
+                                    <a href="{{annualreport.marathiUrl}}" target="_blank" ng-if="annualreport.marathiUrl">Marathi</a> </b></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

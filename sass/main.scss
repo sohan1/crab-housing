@@ -149,7 +149,7 @@ $dropdown-box-shadow: 0 .5rem 1rem rgba($black,
 // @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "../bower_components/bootstrap/scss/bootstrap";
 body {
-    padding-top: 187px;
+    padding-top: 192px;
 }
 
 header {
@@ -931,7 +931,12 @@ span.color-blue {
         border-right: 1px solid #fff;
     }
 }
-
+.table-responsive {
+    display: table;
+}
+.table-report {
+    width: 70%;
+}
 @import "fancybox-override";
 @import "bootstrapui-fixes";
 @import "mobile";
