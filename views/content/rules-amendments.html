@@ -20,27 +20,27 @@
     <div class="container">
         <div class="paddings">
             <div class="tab-custom">
-                <uib-tabset active="active">
-                    <uib-tab index="$index + 1" ng-repeat="tab in tabs" heading="{{tab.title}}" disable="tab.disabled">
-                        <table class="table table-responsive">
-                            <thead>
-                                <tr class="table-primary">
-                                    <th><b>Date</b></th>
-                                    <th><b>Details</b></th>
-                                    <th><b>Download Link</b></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td align="left">27.12.2017</td>
-                                    <td align="left">Regd. KYC (Download KYC Form)</td>
-                                    <td><b><a href="Felicitation_form_English_March-2017.pdf" target="_blank">English</a><br>                        
-                                    <a href="Felicitation_form_Marathi_March-2017.pdf" target="_blank">Marathi</a> </b></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </uib-tab>
-                </uib-tabset>
+                <h2 class="lead text-uppercase" style="padding:0; margin:10px 0; font-size:1.5rem;letter-spacing: 2px;">Rules &amp; Bye-Laws</h2>
+                <table class="table table-responsive table-report">
+                    <thead>
+                        <tr class="table-primary">
+                            <th><b>Annual Report</b></th>
+                            <th><b>Download Link</b></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="rule in rules">
+                            <td align="left">{{rule.date}}</td>
+                            <td><b><a href="{{rule.englishUrl}}" target="_blank" ng-if="rule.englishUrl">English</a><br>                        
+                                    <a href="{{rule.marathiUrl}}" target="_blank" ng-if="rule.marathiUrl">Marathi</a> </b></td>
+                        </tr>
+                        <tr>
+                            <td height="15" colspan="2">
+                                Related Links : <a href="amend2004.pdf" target="_blank">Proposed Amendments in 2004</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

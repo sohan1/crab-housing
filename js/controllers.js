@@ -101,8 +101,11 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
 
-        $scope.oneAtATime = true;
+        $scope.audits = [{
+                detail: 'Audit Rectification Report for the year 2014-15',
+                englishUrl: 'demo.pdf',
 
+            }]
         $scope.reports = [{
                 date: 'Annual Report 2016-17',
                 englishUrl: 'demo.pdf',
@@ -110,7 +113,62 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
             },
             {
-                date: 'Annual Report 2015-17',
+                date: 'Annual Report 2015-16',
+                englishUrl: 'demo.pdf',
+                marathiUrl: '',
+            },
+            {
+                date: 'Annual Report 2014-15',
+                englishUrl: 'demo.pdf',
+                marathiUrl: '',
+            },
+            {
+                date: 'Annual Report 2013-14',
+                englishUrl: 'demo.pdf',
+                marathiUrl: '',
+            },
+            {
+                date: 'Annual Report 2011-12',
+                englishUrl: 'demo.pdf',
+                marathiUrl: '',
+            },
+            {
+                date: 'Annual Report 2010-11',
+                englishUrl: 'demo.pdf',
+                marathiUrl: '',
+            },
+            {
+                date: 'Annual Report 2009-10',
+                englishUrl: 'demo.pdf',
+                marathiUrl: '',
+            },
+            {
+                date: 'Annual Report 2008-09',
+                englishUrl: 'demo.pdf',
+                marathiUrl: '',
+            },
+            {
+                date: 'Annual Report 2007-08',
+                englishUrl: 'demo.pdf',
+                marathiUrl: '',
+            },
+            {
+                date: 'Annual Report 2006-07',
+                englishUrl: 'demo.pdf',
+                marathiUrl: '',
+            },
+            {
+                date: 'Annual Report 2005-06',
+                englishUrl: 'demo.pdf',
+                marathiUrl: '',
+            },
+            {
+                date: 'Annual Report 2004-05',
+                englishUrl: 'demo.pdf',
+                marathiUrl: '',
+            },
+            {
+                date: 'Annual Report 2003-04',
                 englishUrl: 'demo.pdf',
                 marathiUrl: '',
             }
@@ -165,6 +223,19 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.menutitle = NavigationService.makeactive("Rules & Amendments"); //This is the Title of the Website
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
+        
+        $scope.rules = [{
+                date: 'Model Bye-Laws of Employees Cooperative Societies (2013)',
+                englishUrl: 'demo.pdf',
+                marathiUrl: 'demo.pdf',
+
+            },
+            {
+                date: 'Proposed Amendments to Bye-Laws (2004-2005)',
+                englishUrl: 'demo.pdf',
+                marathiUrl: '',
+            }
+        ];
     })
 
     .controller('headerctrl', function ($scope, TemplateService) {
