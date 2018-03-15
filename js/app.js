@@ -62,6 +62,16 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
             url: "/form",
             templateUrl: "views/template.html",
             controller: 'FormCtrl'
+        })
+        .state('loan', {
+            url: "/loan",
+            templateUrl: "views/template.html",
+            controller: 'LoanCtrl'
+        })
+        .state('savings', {
+            url: "/savings",
+            templateUrl: "views/template.html",
+            controller: 'SavingsCtrl'
         });
     $urlRouterProvider.otherwise("/");
     $locationProvider.html5Mode(isproduction);

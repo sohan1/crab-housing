@@ -5,7 +5,6 @@
 @import "../bower_components/swiper/dist/css/swiper.min.css";
 @import "../bower_components/smart-app-banner/smart-app-banner.css";
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900');
-
 /* Bootstrap Variables Goes Here */
 
 // Colors
@@ -310,7 +309,6 @@ footer {
     background-image: url(../img/next.png);
 }
 
-
 /* Start writing sass here */
 
 .content {
@@ -432,8 +430,12 @@ h1.title {
     color: $purple;
 }
 
-span.color-blue {
+.color-blue {
     color: $blue;
+}
+
+.color-orange {
+    color: $orange;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
@@ -848,7 +850,7 @@ span.color-blue {
                 color: #2f1f72 !important;
             }
         }
-         :after {
+        :after {
             content: '';
             position: absolute;
             top: 0;
@@ -932,12 +934,15 @@ span.color-blue {
         border-right: 1px solid #fff;
     }
 }
+
 .table-responsive {
     display: table;
 }
+
 .table-report {
     width: 70%;
 }
+
 @import "fancybox-override";
 @import "bootstrapui-fixes";
 @import "mobile";

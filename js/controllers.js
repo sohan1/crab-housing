@@ -95,6 +95,18 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
     })
+    .controller('SavingsCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+        $scope.template = TemplateService.changecontent("savings"); //Use same name of .html file
+        $scope.menutitle = NavigationService.makeactive("Savings"); //This is the Title of the Website
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+    })
+    .controller('LoanCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+        $scope.template = TemplateService.changecontent("loan"); //Use same name of .html file
+        $scope.menutitle = NavigationService.makeactive("Loan"); //This is the Title of the Website
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+    })
     .controller('ReportsCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
         $scope.template = TemplateService.changecontent("reports"); //Use same name of .html file
         $scope.menutitle = NavigationService.makeactive("Reports"); //This is the Title of the Website
@@ -102,10 +114,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.navigation = NavigationService.getnav();
 
         $scope.audits = [{
-                detail: 'Audit Rectification Report for the year 2014-15',
-                englishUrl: 'demo.pdf',
+            detail: 'Audit Rectification Report for the year 2014-15',
+            englishUrl: 'demo.pdf',
 
-            }]
+        }]
         $scope.reports = [{
                 date: 'Annual Report 2016-17',
                 englishUrl: 'demo.pdf',
@@ -194,7 +206,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                     content: '56th AGM Notice',
                     englishUrl: 'demo.pdf',
                     marathiUrl: 'demo.pdf',
-                },{
+                }, {
                     date: '27.10.2017',
                     content: '56th AGM Notice',
                     englishUrl: 'demo.pdf',
@@ -203,12 +215,12 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             },
             {
                 title: '2016',
-                 circulars: [{
+                circulars: [{
                     date: '27.12.2016',
                     content: '56th AGM Notice',
                     englishUrl: 'demo.pdf',
                     marathiUrl: 'demo.pdf',
-                },{
+                }, {
                     date: '27.10.2016',
                     content: '56th AGM Notice',
                     englishUrl: 'demo.pdf',
@@ -223,7 +235,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.menutitle = NavigationService.makeactive("Rules & Amendments"); //This is the Title of the Website
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
-        
+
         $scope.rules = [{
                 date: 'Model Bye-Laws of Employees Cooperative Societies (2013)',
                 englishUrl: 'demo.pdf',
