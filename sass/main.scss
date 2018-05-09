@@ -4,6 +4,7 @@
 @import "../bower_components/fancyBox/source/jquery.fancybox.css";
 @import "../bower_components/swiper/dist/css/swiper.min.css";
 @import "../bower_components/smart-app-banner/smart-app-banner.css";
+@import url('https://fonts.googleapis.com/css?family=Lora');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900');
 /* Bootstrap Variables Goes Here */
 
@@ -423,11 +424,12 @@ footer {
 }
 
 h1.title {
-    font-size: 2rem;
-    font-weight: 700;
+    font-family: 'Lora', serif;
+    font-size: 2.5rem;
     letter-spacing: 1.5px;
     margin: 0;
     color: $purple;
+
 }
 
 .color-blue {
