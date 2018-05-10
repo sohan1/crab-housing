@@ -124,6 +124,32 @@ firstapp.directive('fancybox', function ($document) {
     };
 });
 
+firstapp.directive('easyTickers', function ($compile, $parse) {
+    return {
+        restrict: 'EA',
+        link: function ($scope, element, attrs) {
+            // var $element = $(element);
+            // var target;
+            $(element).easyTicker({
+                direction: 'up',
+                easing: 'swing',
+                speed: 'slow',
+                interval: 2000,
+                height: 'auto',
+                visible: 0,
+                mousePause: 1,
+                controls: {
+                    up: '',
+                    down: '',
+                    toggle: '',
+                    playText: 'Play',
+                    stopText: 'Stop'
+                }
+            });
+        }
+    };
+});
+
 firstapp.directive('autoHeight', function ($compile, $parse) {
     return {
         restrict: 'EA',

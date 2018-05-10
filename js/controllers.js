@@ -12,25 +12,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             'img/home-banner/1.jpg',
             'img/home-banner/2.jpg',
         ];
-
-        $timeout(function () {
-            $('.ticker1').easyTicker({
-                direction: 'up',
-                easing: 'swing',
-                speed: 'slow',
-                interval: 2000,
-                height: 'auto',
-                visible: 0,
-                mousePause: 1,
-                controls: {
-                    up: '',
-                    down: '',
-                    toggle: '',
-                    playText: 'Play',
-                    stopText: 'Stop'
-                }
-            });
-        }, 1000);
         $scope.importantLinks = [{
                 name: '56th ANNUAL REPORT',
                 links: 'http://barc-ecs.com/SabhasadBhavishyaNidhiEngkish.pdf'
