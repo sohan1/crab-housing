@@ -149,7 +149,7 @@ $dropdown-box-shadow: 0 .5rem 1rem rgba($black,
 // @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "../bower_components/bootstrap/scss/bootstrap";
 body {
-    padding-top: 192px;
+    padding-top: 160px;
 }
 
 header {
@@ -186,6 +186,10 @@ a,
 [ui-sref] {
     cursor: pointer;
     @include transition(all ease 300ms);
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 footer {
@@ -228,6 +232,11 @@ footer {
             text-transform: none;
         }
     }
+}
+
+.logo.navbar-brand img {
+    width: 100px;
+    padding: 2px;
 }
 
 .card-deck {
@@ -352,13 +361,17 @@ footer {
             &.firstbar {
                 // @include transform(translate(0px, 6px)rotate(50deg));
                 @include value-prefixer(transform,
-                translate(0px, 6px)rotate(50deg),
-                ("webkit", "moz"));
+                translate(0px,
+                6px)rotate(50deg),
+                ("webkit",
+                "moz"));
             }
             &.secondbar {
                 @include value-prefixer(transform,
-                translate(0px, 0px) rotate(-50deg),
-                ("webkit", "moz"));
+                translate(0px,
+                0px) rotate(-50deg),
+                ("webkit",
+                "moz"));
             }
             &.thirdbar {
                 opacity: 0;
@@ -380,7 +393,8 @@ footer {
     @include transition (all ease 300ms);
     @include value-prefixer(transform,
     translateY(-100%),
-    ("webkit", "moz"));
+    ("webkit",
+    "moz"));
     z-index: 5;
     ul li a {
         color: $white !important;
@@ -398,7 +412,8 @@ footer {
     &.menu-in {
         @include value-prefixer(transform,
         (translateY(0)),
-        ("webkit", "moz"));
+        ("webkit",
+        "moz"));
     }
 }
 
@@ -417,7 +432,7 @@ footer {
         background: $white;
     }
     &.navbar-light .nav-link {
-        padding: 1rem;
+        padding: 0.7rem;
         letter-spacing: 1px;
         color: $white;
     }
@@ -425,11 +440,10 @@ footer {
 
 h1.title {
     font-family: 'Lora', serif;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     letter-spacing: 1.5px;
     margin: 0;
     color: $purple;
-
 }
 
 .color-blue {
@@ -504,7 +518,8 @@ h1.title {
         &:hover {
             @include value-prefixer(transition,
             (all ease 300ms),
-            ("webkit", "moz"));
+            ("webkit",
+            "moz"));
             padding: 32px;
             border-color: $blue;
         }
@@ -947,6 +962,82 @@ h1.title {
 
 .table-report {
     width: 70%;
+}
+
+.marquee {
+    top: 6em;
+    position: relative;
+    box-sizing: border-box;
+    animation: marquee 15s linear infinite;
+}
+
+.marquee:hover {
+    animation-play-state: paused;
+}
+
+/* Make it move! */
+
+@keyframes marquee {
+    0% {
+        top: 8em
+    }
+    100% {
+        top: -11em
+    }
+}
+
+/* Make it look pretty */
+
+.microsoft .marquee {
+    margin: 0;
+    padding: 0 1em;
+    line-height: 1.5em;
+    font: 1em 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+}
+
+.microsoft:before,
+.microsoft::before,
+.microsoft:after,
+.microsoft::after {
+    left: 0;
+    z-index: 1;
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    width: 100%;
+    height: 2em;
+    background-image: linear-gradient(top, #FFF, rgba(255, 255, 255, 0));
+}
+
+.microsoft:after,
+.microsoft::after {
+    bottom: 0;
+    transform: rotate(180deg);
+}
+
+.microsoft:before,
+.microsoft::before {
+    top: 0;
+}
+
+/* Style the links */
+
+.vanity {
+    color: #333;
+    text-align: center;
+    font: .75em 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+}
+
+.vanity a,
+.microsoft a {
+    color: #1570A6;
+    transition: color .5s;
+    text-decoration: none;
+}
+
+.vanity a:hover,
+.microsoft a:hover {
+    color: #F65314;
 }
 
 @import "fancybox-override";

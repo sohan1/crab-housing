@@ -38,6 +38,10 @@ var navigationservice = angular.module('navigationservice', [])
             classis: "active",
             anchor: "reports"
         }, {
+            name: "Gallery",
+            classis: "active",
+            anchor: "gallery"
+        }, {
             name: "Downloads",
             classis: "active",
             anchor: "downloads"
