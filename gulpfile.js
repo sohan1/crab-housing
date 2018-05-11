@@ -1,7 +1,7 @@
 var jsArray = [
     //JS & jQuery Libs
     './bower_components/jquery/dist/jquery.min.js',
-    './js/ticker/jquery.ease-ticker.js',
+    './js/ticker/jquery.ease-ticker.min.js',
     './bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js',
     './bower_components/flexslider/jquery.flexslider-min.js',
     './bower_components/fancyBox/source/jquery.fancybox.js',

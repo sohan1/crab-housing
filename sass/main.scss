@@ -195,9 +195,11 @@ a:hover {
 footer {
     background-color: $blue;
     padding: 30px 0 10px;
-    .copy {
-        padding-top: 10px;
+    .bor-top {
         border-top: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    .copy {
+        padding-top: 15px;
         p {
             font-size: 12px;
         }
@@ -1038,6 +1040,16 @@ h1.title {
 .vanity a:hover,
 .microsoft a:hover {
     color: #F65314;
+}
+
+.mt--7 {
+    margin-top: -7%;
+}
+
+.swach-bharat,
+.make-in-india {
+    width: 100%;
+    padding: 4px;
 }
 
 @import "fancybox-override";
