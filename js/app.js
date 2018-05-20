@@ -19,7 +19,7 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
             controller: 'HomeCtrl'
         })
         .state('committee', {
-            url: "/committee",
+            url: "/manage",
             templateUrl: "views/template.html",
             controller: 'CommitteeCtrl'
         })
@@ -34,22 +34,27 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
             controller: 'AboutCtrl'
         })
         .state('downloads', {
-            url: "/downloads",
+            url: "/pr",
             templateUrl: "views/template.html",
             controller: 'DownloadsCtrl'
         })
         .state('reports', {
-            url: "/reports",
+            url: "/ar",
             templateUrl: "views/template.html",
             controller: 'ReportsCtrl'
         })
+        .state('audit', {
+            url: "/audit",
+            templateUrl: "views/template.html",
+            controller: 'AuditCtrl'
+        })
         .state('notices-circulars', {
-            url: "/notices-circulars",
+            url: "/nandm",
             templateUrl: "views/template.html",
             controller: 'NoticesCircularsCtrl'
         })
         .state('rules-amendments', {
-            url: "/rules-amendments",
+            url: "/rules",
             templateUrl: "views/template.html",
             controller: 'RulesAmendmentsCtrl'
         })
@@ -68,8 +73,13 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
             templateUrl: "views/template.html",
             controller: 'LoanCtrl'
         })
+        .state('gallery', {
+            url: "/gallery",
+            templateUrl: "views/template.html",
+            controller: 'GalleryCtrl'
+        })
         .state('savings', {
-            url: "/savings",
+            url: "/save",
             templateUrl: "views/template.html",
             controller: 'SavingsCtrl'
         });
@@ -118,7 +128,19 @@ firstapp.directive('fancybox', function ($document) {
                 padding: 0,
                 helpers: {
                     media: {}
-                }
+                },
+                thumbs: {
+                    autoStart: true
+                },
+                buttons: [
+                    "zoom",
+                    "share",
+                    "slideShow",
+                    "fullScreen",
+                    "download",
+                    "thumbs",
+                    "close"
+                ]
             });
         }
     };

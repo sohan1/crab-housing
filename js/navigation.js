@@ -11,11 +11,13 @@ var navigationservice = angular.module('navigationservice', [])
         var navigation = [{
             name: "Home",
             classis: "active",
-            anchor: "home"
+            anchor: "home",
+            subnav: []
         }, {
             name: "About",
             classis: "active",
-            anchor: "about"
+            anchor: "about",
+            subnav: []
         }, {
             name: "Schemes",
             classis: "active",
@@ -32,31 +34,46 @@ var navigationservice = angular.module('navigationservice', [])
         }, {
             name: "Committee",
             classis: "active",
-            anchor: "committee"
+            anchor: "committee",
+            subnav: []
         }, {
             name: "Reports",
             classis: "active",
-            anchor: "reports"
+            anchor: "",
+            subnav: [{
+                name: "Annual Report",
+                classis: "active",
+                anchor: "reports",
+            }, {
+                name: "Audit",
+                classis: "active",
+                anchor: "audit"
+            }]
         }, {
             name: "Gallery",
             classis: "active",
-            anchor: "gallery"
+            anchor: "gallery",
+            subnav: []
         }, {
             name: "Downloads",
             classis: "active",
-            anchor: "downloads"
+            anchor: "downloads",
+            subnav: []
         }, {
             name: "Notices & Circulars",
             classis: "active",
-            anchor: "notices-circulars"
+            anchor: "notices-circulars",
+            subnav: []
         }, {
-            name: "	Rules & Amendments",
+            name: "Rules & Amendments",
             classis: "active",
-            anchor: "rules-amendments"
+            anchor: "rules-amendments",
+            subnav: []
         }, {
-            name: "	Contact",
+            name: "Contact",
             classis: "active",
-            anchor: "contact"
+            anchor: "contact",
+            subnav: []
         }];
 
         return {

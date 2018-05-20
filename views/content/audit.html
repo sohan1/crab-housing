@@ -1,0 +1,48 @@
+<div class="breadcrumbs breadcrumbs-sections">
+    <div class="container">
+        <ul class="list-unstyled">
+            <li class="breadcrumbs-home">
+                <a ui-sref="home" title="Back To Home">
+                    <i class="fa fa-home"></i>
+                </a>
+            </li>
+            <li>Audit</li>
+        </ul>
+    </div>
+</div>
+<h1 align="center" class="lead text-uppercase text-center" style="padding:0; margin:50px 0; font-size:2rem;letter-spacing: 2px;">Audit</h1>
+<div class="reports">
+    <div class="container">
+        <div class="about-img">
+            <img src="img/report.jpg" alt="" class="img-fluid">
+        </div>
+    </div>
+    <div class="container">
+        <div class="paddings">
+            <h2 class="lead text-uppercase" style="padding:0; margin:10px 0; font-size:1.5rem;letter-spacing: 2px;">Audit</h2>
+            <div class="custom-panel">
+                <table class="table table-responsive table-report">
+                    <thead>
+                        <tr class="table-primary">
+                            <th>
+                                <b>Detail</b>
+                            </th>
+                            <th>
+                                <b>Download Link</b>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="audit in audits">
+                            <td align="left">{{audit.detail}}</td>
+                            <td>
+                                <b>
+                                    <a href="{{audit.englishUrl}}" target="_blank" ng-if="audit.englishUrl">Download</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -4,7 +4,7 @@ var jsArray = [
     './js/ticker/jquery.ease-ticker.min.js',
     './bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js',
     './bower_components/flexslider/jquery.flexslider-min.js',
-    './bower_components/fancyBox/source/jquery.fancybox.js',
+    './bower_components/fancybox/dist/jquery.fancybox.js',
     './bower_components/swiper/dist/js/swiper.js',
     './bower_components/smart-app-banner/smart-app-banner.js',
 

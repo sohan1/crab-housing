@@ -6,11 +6,11 @@
                     <i class="fa fa-home"></i>
                 </a>
             </li>
-            <li>Reports and Audit</li>
+            <li>Annual Report</li>
         </ul>
     </div>
 </div>
-<h1 align="center" class="lead text-uppercase text-center" style="padding:0; margin:50px 0; font-size:2rem;letter-spacing: 2px;">Reports and Audit</h1>
+<h1 align="center" class="lead text-uppercase text-center" style="padding:0; margin:50px 0; font-size:2rem;letter-spacing: 2px;">Annual Report</h1>
 <div class="reports">
     <div class="container">
         <div class="about-img">
@@ -19,47 +19,38 @@
     </div>
     <div class="container">
         <div class="paddings">
-            <h2 class="lead text-uppercase" style="padding:0; margin:10px 0; font-size:1.5rem;letter-spacing: 2px;">Audit</h2>
-            <div class="custom-panel">
-                <table class="table table-responsive table-report">
-                    <thead>
-                        <tr class="table-primary">
-                            <th><b>Detail</b></th>
-                            <th><b>Download Link</b></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr ng-repeat="audit in audits">
-                            <td align="left">{{audit.detail}}</td>
-                            <td><b><a href="{{audit.englishUrl}}" target="_blank" ng-if="audit.englishUrl">Download</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="paddings">
             <h2 class="lead text-uppercase" style="padding:0; margin:10px 0; font-size:1.5rem;letter-spacing: 2px;">Annual Report</h2>
             <div class="custom-panel">
                 <table class="table table-responsive table-report">
                     <thead>
                         <tr class="table-primary">
-                            <th><b>Annual Report</b></th>
-                                <th><b>Download Link</b></th>
+                            <th>
+                                <b>Annual Report</b>
+                            </th>
+                            <th>
+                                <b>Download Link</b>
+                            </th>
                         </tr>
-                        </thead>
-                        <tbody>
-                            <tr ng-repeat="annualreport in reports">
-                                <td align="left">{{annualreport.date}}</td>
-                                <td><b><a href="{{annualreport.englishUrl}}" target="_blank" ng-if="annualreport.englishUrl">English</a><br>                        
-                                    <a href="{{annualreport.marathiUrl}}" target="_blank" ng-if="annualreport.marathiUrl">Marathi</a> </b></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    <div align="left">Any further clarification can be obtain from <a ui-sref="contact">Society Office</a>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="annualreport in reports">
+                            <td align="left">{{annualreport.date}}</td>
+                            <td>
+                                <b>
+                                    <a href="{{annualreport.englishUrl}}" target="_blank" ng-if="annualreport.englishUrl">English</a>
+                                    <br>
+                                    <a href="{{annualreport.marathiUrl}}" target="_blank" ng-if="annualreport.marathiUrl">Marathi</a>
+                                </b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <div align="left">Any further clarification can be obtain from
+                                    <a ui-sref="contact">Society Office</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         </div>

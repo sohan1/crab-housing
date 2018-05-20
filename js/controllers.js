@@ -43,7 +43,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             }
         ]
     })
-
     .controller('ContactCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
         $scope.template = TemplateService.changecontent("contact"); //Use same name of .html file
         $scope.menutitle = NavigationService.makeactive("Contact"); //This is the Title of the Website
@@ -57,7 +56,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             $scope.formSubmitted = true;
         }
     })
-
     .controller('AboutCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
         $scope.template = TemplateService.changecontent("about"); //Use same name of .html file
         $scope.menutitle = NavigationService.makeactive("About"); //This is the Title of the Website
@@ -94,11 +92,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
 
-        $scope.audits = [{
-            detail: 'Audit Rectification Report for the year 2014-15',
-            englishUrl: 'demo.pdf',
-
-        }]
         $scope.reports = [{
                 date: 'Annual Report 2016-17',
                 englishUrl: 'demo.pdf',
@@ -167,6 +160,18 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             }
         ];
     })
+    .controller('AuditCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+        $scope.template = TemplateService.changecontent("audit"); //Use same name of .html file
+        $scope.menutitle = NavigationService.makeactive("Audit"); //This is the Title of the Website
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+
+        $scope.audits = [{
+            detail: 'Audit Rectification Report for the year 2014-15',
+            englishUrl: 'demo.pdf',
+
+        }]
+    })
     .controller('DownloadsCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
         $scope.template = TemplateService.changecontent("downloads"); //Use same name of .html file
         $scope.menutitle = NavigationService.makeactive("Downloads"); //This is the Title of the Website
@@ -230,7 +235,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             }
         ];
     })
-
     .controller('headerctrl', function ($scope, TemplateService) {
         $scope.template = TemplateService;
         $scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
@@ -238,9 +242,37 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         });
         $.fancybox.close(true);
     })
+    .controller('GalleryCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+        $scope.template = TemplateService.changecontent("gallery"); //Use same name of .html file
+        $scope.menutitle = NavigationService.makeactive("Gallery"); //This is the Title of the Website
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+        $scope.oneAtATime = true;
 
+        $scope.gallerys = [{
+                title: '2017',
+                details: [{
+                    image: 'img/home-banner/1.jpg',
+                    title: 'Annual Function',
+                }, {
+                    image: 'img/home-banner/2.jpg',
+                    title: 'Annual Function',
+                }]
+            },
+            {
+                title: '2016',
+                details: [{
+                    image: 'img/home-banner/1.jpg',
+                    title: 'Annual Function',
+                }, {
+                    image: 'img/home-banner/2.jpg',
+                    title: 'Annual Function',
+                }]
+
+            }
+        ];
+    })
     .controller('languageCtrl', function ($scope, TemplateService, $translate, $rootScope) {
-
         $scope.changeLanguage = function () {
             console.log("Language CLicked");
 

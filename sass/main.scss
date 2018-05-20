@@ -1,7 +1,7 @@
 @import "../bower_components/bourbon/core/bourbon";
 @import "../bower_components/flexslider/flexslider.css";
 @import "../bower_components/font-awesome/css/font-awesome.min.css";
-@import "../bower_components/fancyBox/source/jquery.fancybox.css";
+@import "../bower_components/fancybox/dist/jquery.fancybox";
 @import "../bower_components/swiper/dist/css/swiper.min.css";
 @import "../bower_components/smart-app-banner/smart-app-banner.css";
 @import url('https://fonts.googleapis.com/css?family=Lora');
@@ -190,6 +190,14 @@ a,
 
 a:hover {
     text-decoration: none;
+}
+
+.pad-20 {
+    padding: 20px;
+}
+
+.mb5 {
+    margin-bottom: 5px;
 }
 
 footer {
@@ -384,6 +392,9 @@ footer {
 
 .flexslider {
     border: none;
+    .min-height-slider {
+        height: 90vh;
+    }
 }
 
 .sidemenu {
@@ -438,6 +449,11 @@ footer {
         letter-spacing: 1px;
         color: $white;
     }
+}
+
+.submenu.active {
+    background: $brand-primary;
+    color: #fff;
 }
 
 h1.title {
@@ -557,27 +573,26 @@ h1.title {
     }
     .title-vertical-line {
         text-align: center;
-        position: relative;
-        &:before {
-            content: '';
-            left: 50%;
-            position: absolute;
-            top: -100px;
-            height: 80px;
-            border: dashed 1px #232323;
-            opacity: 0.6;
-        }
-        &:after {
-            content: '';
-            position: absolute;
-            top: -23px;
-            left: 50%;
-            margin-left: -5px;
-            border-radius: 50%;
-            width: 12px;
-            height: 12px;
-            background: #da6600;
-        }
+        position: relative; // &:before {
+        //     content: '';
+        //     left: 50%;
+        //     position: absolute;
+        //     top: -100px;
+        //     height: 80px;
+        //     border: dashed 1px #232323;
+        //     opacity: 0.6;
+        // }
+        // &:after {
+        //     content: '';
+        //     position: absolute;
+        //     top: -23px;
+        //     left: 50%;
+        //     margin-left: -5px;
+        //     border-radius: 50%;
+        //     width: 12px;
+        //     height: 12px;
+        //     background: #da6600;
+        // }
         h2 {
             margin-top: 100px;
             padding: 5px 0 15px 0;
@@ -624,48 +639,43 @@ h1.title {
         min-height: 150px;
         padding: 30px 0;
         text-align: center;
-        margin: 0 auto;
-        &:before {
-            content: '';
-            right: -70px;
-            position: absolute;
-            top: 0;
-            height: 100%;
-            z-index: 1;
-            border-top: 75px solid transparent;
-            border-bottom: 72px solid transparent;
-        }
-        &:after {
-            content: '';
-            left: 0px;
-            position: absolute;
-            top: 0;
-            height: 100%;
-            border-top: 75px solid transparent;
-            border-bottom: 72px solid transparent;
-            border-left: 70px solid #fff;
-        }
+        margin: 0 auto; // &:before {
+        //     content: '';
+        //     right: -70px;
+        //     position: absolute;
+        //     top: 0;
+        //     height: 100%;
+        //     z-index: 1;
+        //     border-top: 75px solid transparent;
+        //     border-bottom: 72px solid transparent;
+        // }
+        // &:after {
+        //     content: '';
+        //     left: 0px;
+        //     position: absolute;
+        //     top: 0;
+        //     height: 100%;
+        //     border-top: 75px solid transparent;
+        //     border-bottom: 72px solid transparent;
+        //     border-left: 70px solid #fff;
+        // }
         h3 {
             color: #fff;
             font-weight: bold;
-            font-size: 1.3rem;
-            margin-left: 70px;
+            font-size: 1.3rem; // margin-left: 70px;
         }
         i {
             color: #fff;
             font-weight: bold;
-            font-size: 1.8rem;
-            margin-left: 70px;
+            font-size: 1.8rem; // margin-left: 70px;
         }
     }
 }
 
 .divisor-service-process {
-    position: relative;
-    height: 100px;
-    margin: 0 auto;
-    margin-left: 58%;
-    border: dashed 1px #777;
+    position: relative; // height: 100px;
+    margin: 10px auto; // margin-left: 58%;
+    // border: dashed 1px #777;
     width: 1px;
     .circle-top {
         position: absolute;
@@ -694,13 +704,14 @@ h1.title {
         width: 12px;
         height: 12px;
         background: #777;
+        display: none;
     }
 }
 
 .info-service-process {
     position: relative;
-    width: 80%;
-    padding: 10px 0 0 40px;
+    width: 80%; // padding: 10px 0 0 40px;
+    padding: 30px 0 0 10px;
     text-align: center;
     margin: 0 auto;
     p {
@@ -713,8 +724,7 @@ h1.title {
 .head-service-process h3 {
     color: #fff;
     font-weight: bold;
-    font-size: 1.3rem;
-    margin-left: 70px;
+    font-size: 1.3rem; // margin-left: 70px;
     line-height: 2.125rem;
 }
 
@@ -724,10 +734,9 @@ h1.title {
     background: #88C425 !important;
 }
 
-.color-bg-1 .head-service-process:before {
-    border-left: 70px solid #88C425;
-}
-
+// .color-bg-1 .head-service-process:before {
+//     border-left: 70px solid #88C425;
+// }
 .color-bg-1 .divisor-service-process .circle-top {
     border: solid 3px #88C425;
 }
@@ -752,16 +761,17 @@ h1.title {
 
 .dropdown-menu {
     margin: 0;
+    padding: 0;
+    border-width: 0;
 }
 
 .color-bg-2 .divisor-service-process .circle-top {
     border: solid 3px #15a4d3;
 }
 
-.color-bg-2 .head-service-process:before {
-    border-left: 70px solid #15a4d3;
-}
-
+// .color-bg-2 .head-service-process:before {
+//     border-left: 70px solid #15a4d3;
+// }
 .color-bg-3 .info-service-process h3,
 .mini-box .color-bg-3 i,
 .color-dark-table.color-bg-3 {
@@ -778,10 +788,9 @@ h1.title {
     border: solid 3px #EB4436;
 }
 
-.color-bg-3 .head-service-process:before {
-    border-left: 70px solid #EB4436;
-}
-
+// .color-bg-3 .head-service-process:before {
+//     border-left: 70px solid #EB4436;
+// }
 .color-bg-4 .head-service-process,
 .item-financial-content.color-bg-4,
 .table thead .color-bg-4 {
@@ -792,10 +801,9 @@ h1.title {
     border: solid 3px #34A853;
 }
 
-.color-bg-4 .head-service-process:before {
-    border-left: 70px solid #34A853;
-}
-
+// .color-bg-4 .head-service-process:before {
+//     border-left: 70px solid #34A853;
+// }
 .color-bg-4 .info-service-process h3,
 .mini-box .color-bg-4 i,
 .color-dark-table.color-bg-4 {
@@ -1042,14 +1050,15 @@ h1.title {
     color: #F65314;
 }
 
-.mt--7 {
-    margin-top: -7%;
-}
-
 .swach-bharat,
 .make-in-india {
     width: 100%;
     padding: 4px;
+}
+
+.ticker .card {
+    max-height: 400px;
+    overflow: hidden;
 }
 
 @import "fancybox-override";

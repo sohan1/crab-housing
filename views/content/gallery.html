@@ -1,0 +1,34 @@
+<div class="breadcrumbs breadcrumbs-sections">
+    <div class="container">
+        <ul class="list-unstyled">
+            <li class="breadcrumbs-home">
+                <a ui-sref="home" title="Back To Home">
+                    <i class="fa fa-home"></i>
+                </a>
+            </li>
+            <li></li>
+        </ul>
+    </div>
+</div>
+<h1 align="center" class="lead text-uppercase text-center" style="padding:0; margin:50px 0; font-size:2rem;letter-spacing: 2px;">Gallery</h1>
+<div class="reports">
+    <div class="container">
+        <!-- <h2 class="lead text-uppercase" style="padding:0; margin:10px 0; font-size:1.5rem;letter-spacing: 2px;">Gallery</h2> -->
+
+        <div class="paddings">
+            <div class="tab-custom">
+                <uib-tabset active="active">
+                    <uib-tab index="$index + 1" ng-repeat="gallery in gallerys" heading="{{gallery.title}}" disable="tab.disabled">
+                        <div class="gallery-tab">
+                            <ul class="row list-unstyled">
+                                <li class="col-md-3" ng-repeat="detail in gallery.details" data-fancybox="images" fancybox ng-href="{{detail.image}}">
+                                    <img src="{{detail.image}}" alt="BARC Employees' Co-Op. Credit Society Ltd." class="full-img">
+                                </li>
+                            </ul>
+                        </div>
+                    </uib-tab>
+                </uib-tabset>
+            </div>
+        </div>
+    </div>
+</div>
