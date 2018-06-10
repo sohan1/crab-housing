@@ -31,8 +31,11 @@
                     <tbody>
                         <tr ng-repeat="rule in rules">
                             <td align="left">{{rule.date}}</td>
-                            <td><b><a href="{{rule.englishUrl}}" target="_blank" ng-if="rule.englishUrl">English</a><br>                        
-                                    <a href="{{rule.marathiUrl}}" target="_blank" ng-if="rule.marathiUrl">Marathi</a> </b></td>
+                            <td><b><a href="{{rule.englishUrl}}" target="_blank" ng-if="rule.englishUrl">English</a><br ng-if="rule.englishUrl && rule.marathiUrl">                        
+                                    <a href="{{rule.marathiUrl}}" target="_blank" ng-if="rule.marathiUrl">Marathi</a> <br ng-if="rule.marathiUrl">
+                                    <a href="{{rule.hindiUrl}}" target="_blank" ng-if="rule.hindiUrl">Hindi</a> 
+                                </b>
+                                </td>
                         </tr>
                         <tr>
                             <td height="15" colspan="2">

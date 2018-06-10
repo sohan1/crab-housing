@@ -183,7 +183,11 @@ firstapp.directive('autoHeight', function ($compile, $parse) {
         }
     };
 });
-
+firstapp.filter('trustAsHtml',['$sce', function($sce) {
+    return function(text) {
+      return $sce.trustAsHtml(text);
+    };
+  }]);
 firstapp.directive('hideOnScroll', function ($document) {
     return {
         restrict: 'EA',

@@ -1083,6 +1083,13 @@ h1.title {
 .col-xs-10 {
     width: 80%;
 }
+
+.circular-table{
+    p{
+        margin-bottom: 0;
+    }
+}
+
 @import "fancybox-override";
 @import "bootstrapui-fixes";
 @import "mobile";

@@ -22,7 +22,7 @@
             <div class="tab-custom">
                 <uib-tabset active="active">
                     <uib-tab index="$index + 1" ng-repeat="tab in tabs" heading="{{tab.title}}" disable="tab.disabled">
-                        <table class="table table-responsive">
+                        <table class="table table-responsive circular-table">
                             <thead>
                                 <tr class="table-primary">
                                     <th>
@@ -39,18 +39,20 @@
                             <tbody>
                                 <tr ng-repeat="circular in tab.circulars">
                                     <td align="left">{{circular.date}}</td>
-                                    <td align="left" ng-bind-html="circular.content">
-            
-                                        <p align="right"><a href="pr.html">Download Application Form</a></p>
+                                    <td align="left" ng-bind-html="circular.content | trustAsHtml">
                                     </td>
                                     <td>
                                         <b>
                                             <a href="{{circular.englishUrl}}" target="_blank" ng-if="circular.englishUrl">
                                                 English</a>
-                                            <br>
-                                            <a href="{{circular.marathiUrl}}" target="_blank" ng-if="circular.marathiUrl">
-                                                Marathi
-                                            </a>
+                                                <br ng-if="circular.englishUrl && circular.hindiUrl">
+                                                <br ng-if="circular.englishUrl && circular.marathiUrl && !circular.hindiUrl">
+                                                <a href="{{circular.hindiUrl}}" target="_blank" ng-if="circular.hindiUrl">
+                                                    Hindi
+                                                </a><br ng-if="circular.marathiUrl && circular.hindiUrl">
+                                                <a href="{{circular.marathiUrl}}" target="_blank" ng-if="circular.marathiUrl">
+                                                    Marathi
+                                                </a>
                                         </b>
                                     </td>
                                 </tr>
