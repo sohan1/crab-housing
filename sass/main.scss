@@ -155,6 +155,11 @@ body {
 header {
     box-shadow: 1px 0px 3px #ddd;
     background: $white;
+    transition: all ease 300ms;
+}
+
+.nav-text {
+    width: 850px;
 }
 
 img.loading {
@@ -179,6 +184,13 @@ nav li:hover .dropdown-menu {
 
 #map img {
     opacity: 1;
+}
+
+.navbar-toggler {
+    border: 1px solid $purple;
+    &:focus{
+        border: 1px solid $purple;
+    }
 }
 
 a,
@@ -1061,6 +1073,15 @@ h1.title {
     overflow: hidden;
 }
 
+.nav-up {
+    transform: translateY(-100%);
+}
+.col-xs-2 {
+    width: 20%;
+}
+.col-xs-10 {
+    width: 80%;
+}
 @import "fancybox-override";
 @import "bootstrapui-fixes";
 @import "mobile";

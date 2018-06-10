@@ -184,6 +184,26 @@ firstapp.directive('autoHeight', function ($compile, $parse) {
     };
 });
 
+firstapp.directive('hideOnScroll', function ($document) {
+    return {
+        restrict: 'EA',
+        replace: false,
+        link: function (scope, element, attr) {
+            var $element = $(element);
+            var lastScrollTop = 0;
+            $(window).scroll(function (event) {
+                var st = $(this).scrollTop();
+                if (st > lastScrollTop) {
+                    $(element).addClass('nav-up');
+                } else {
+                    $(element).removeClass('nav-up');
+                }
+                lastScrollTop = st;
+            });
+        }
+    };
+})
+
 firstapp.config(function ($translateProvider) {
     $translateProvider.translations('en', LanguageEnglish);
     $translateProvider.translations('hi', LanguageHindi);

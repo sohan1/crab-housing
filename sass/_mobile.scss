@@ -1,5 +1,128 @@
-@media (min-width(var(--breakpoint-xs))) {}
-@media (min-width(var(--breakpoint-sm))) {}
-@media (min-width(var(--breakpoint-md))) {}
-@media (min-width(var(--breakpoint-lg))) {}
-@media (min-width(var(--breakpoint-xl))) {}
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {
+    body {
+        padding-top: 185px;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    body {
+        padding-top: 150px;
+    }
+    .sm-w100 {
+        max-width: 100% !important;
+    }
+    h1.title {
+        font-size: 1.5rem;
+    }
+    .navbar-light .nav-link {
+        font-size: 0.6rem;
+    }
+    .bg-color {
+        padding: 0rem;
+    }
+    .nav-text {
+        width: 600px;
+        float: right;
+    }
+    .schemes .img-holder {
+        width: 100%;
+    }
+    .info-service-process {
+        width: 98%;
+        h3 {
+            font-size: 1.2rem;
+        }
+    }
+    .item-service-process {
+        margin: 0;
+        width: 32%;
+        .head-service-process {
+            width: 95%;
+        }
+        p {
+            font-size: 0.8rem;
+        }
+    }
+    .lead {
+        font-size: 1rem;
+    }
+    .item-service-process:first-child,
+    .item-service-process:nth-child(4n+1) {
+        margin-left: 0px;
+    }
+    .schemes .fig-title {
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    body {
+        padding-top: 145px;
+        margin-left: 0;
+    }
+    .navbar-light .nav-link {
+        font-size: 1rem;
+    }
+    h1.title {
+        font-size: 1rem;
+    }
+    .fnt-07em {
+        font-size: 0.7em;
+    }
+    a.navbar-brand.logo {
+        width: 80px;
+        img {
+            width: 100%;
+        }
+    }
+    .nav-text {
+        width: 425px;
+    }
+    .navbar-toggler {
+        position: absolute;
+        top: 20px;
+        right: 0;
+    }
+    .table-report {
+        width: 100%;
+    }
+    .item-service-process {
+        width: 50%;
+    }
+    .services-process {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .schemes .img-holder {
+        width: 70%;
+    }
+    .ticker .card {
+        margin-bottom: 30px;
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    body {
+        padding-top: 155px;
+    }
+    a.navbar-brand.logo {
+        width: 70px;
+        margin-right: 5px;
+    }
+    .nav-text {
+        width: 100%;
+    }
+    .services-process {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .item-service-process {
+        width: 80%;
+    }
+    .swach-bharat, .make-in-india {
+        width: 60%;
+    }
+}
