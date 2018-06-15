@@ -45,9 +45,10 @@
                             <div class="ticker1" easy-tickers>
                                 <div class="innerWrap">
                                     <div class="list" ng-repeat="importantLink in importantLinks">
-                                        <a href="{{importantLink.links}}" target="_blank">
+                                        <a ng-if="importantLink.links" href="{{importantLink.links}}" target="_blank">
                                             {{importantLink.name}}
                                         </a>
+                                        <span ng-if="!importantLink.links">{{importantLink.name}}</span>
                                     </div>
                                 </div>
                             </div>

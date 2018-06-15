@@ -46,5 +46,27 @@
                 </table>
             </div>
         </div>
+
+
+        <div class="paddings">
+            <div class="tab-custom">
+                <h2 class="lead text-uppercase" style="padding:0; margin:10px 0; font-size:1.5rem;letter-spacing: 2px;">Amendments</h2>
+                <table class="table table-responsive table-report">
+                    <tbody ng-repeat="amendment in amendments">
+                        <tr class="table-primary">
+                            <th colspan="2" class="text-center"><b>{{amendment.title}}</b></th>
+                        </tr>
+                        <tr ng-repeat="data in amendment.circulars">
+                            <td align="left" ng-bind-html="data.content | trustAsHtml"></td>
+                            <td><b><a href="{{data.englishUrl}}" target="_blank" ng-if="data.englishUrl">English</a><br ng-if="data.englishUrl && data.marathiUrl">                        
+                                    <a href="{{data.marathiUrl}}" target="_blank" ng-if="data.marathiUrl">Marathi</a> <br ng-if="data.marathiUrl">
+                                    <a href="{{data.hindiUrl}}" target="_blank" ng-if="data.hindiUrl">Hindi</a> 
+                                </b>
+                                </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 </div>
