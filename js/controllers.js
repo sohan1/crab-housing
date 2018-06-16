@@ -11,7 +11,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             // 'img/home-banner/4.jpg',
             'img/home-banner/1.jpg',
             'img/home-banner/2.jpg',
-            'img/home-banner/BARC MUMBAI.jpg',
+            'img/home-banner/BARCMUMBAI.jpg',
         ];
         $scope.importantLinks = [{
                 name: '56th ANNUAL REPORT',
