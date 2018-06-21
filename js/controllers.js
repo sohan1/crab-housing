@@ -35,7 +35,14 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             }, {
                 name: 'Criteria for loan',
                 links: 'TypeofLoan.pdf'
-            } 
+            }, {
+                name: 'PARMANU SCHEME - Rs. 525/- p.m. @9% within a span of 72 months and earn Rs.50,000/- w.e.f 1.3.2012',
+                links: 'int_rate.pdf'
+            }, {
+                name: 'LAKHPATI SCHEME - Rs. 1,050/- p.m. @9% within a span of 72 months and earn Rs. 1,00,000/- w.e.f 1.3.2012',
+                links: 'int_rate.pdf'
+            }
+
         ]
     })
     .controller('ContactCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
@@ -107,54 +114,53 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.navigation = NavigationService.getnav();
 
         $scope.rules = [{
-            date: 'Model Bye-Laws of Employees Cooperative Societies (2013)',
-            englishUrl: 'Model_Bye-Laws_of_Employees_Cooperative_Societies.pdf',
-            marathiUrl: '',
+                date: 'Model Bye-Laws of Employees Cooperative Societies (2013)',
+                englishUrl: 'Model_Bye-Laws_of_Employees_Cooperative_Societies.pdf',
+                marathiUrl: '',
 
-        },
-        {
-            date: 'Proposed Amendments to Bye-Laws (2004-2005)',
-            englishUrl: 'amend2005.pdf',
-            marathiUrl: 'amend2005-m.pdf',
-        }
-    ];
-    
-    
-    $scope.amendments = [{
-        title: 'Proposed Amendments for the year 2015-16',
-        circulars: [{
-            content: 'C.1.4 Proposed Amendment-1',
-            englishUrl: 'C.1.4%20%20Proposed%20Amendment.pdf',
-            marathiUrl: '',
+            },
+            {
+                date: 'Proposed Amendments to Bye-Laws (2004-2005)',
+                englishUrl: 'amend2005.pdf',
+                marathiUrl: 'amend2005-m.pdf',
+            }
+        ];
+
+
+        $scope.amendments = [{
+            title: 'Proposed Amendments for the year 2015-16',
+            circulars: [{
+                content: 'C.1.4 Proposed Amendment-1',
+                englishUrl: 'C.1.4%20%20Proposed%20Amendment.pdf',
+                marathiUrl: '',
+            }, {
+                content: 'F.1.10 Speical Loan Proposed Amendment-2',
+                englishUrl: 'F.1.10%20Speical%20Loan%20%20Proposed%20Amendment-2.pdf',
+                marathiUrl: '',
+            }, {
+                content: 'F.1.10. Emergency Loan Proposed Amendment-3',
+                englishUrl: 'F.1.10.%20Emergency%20Loan%20Proposed%20Amendment-3.pdf',
+                marathiUrl: '',
+            }, {
+                content: 'Loan Rule No. 10 Surety libiality Proposed Amendment-4',
+                englishUrl: 'Loan%20Rule%20No.%2010%20Surety%20libiality%20Proposed%20Amendment-4.pdf',
+                marathiUrl: '',
+            }]
         }, {
-            content: 'F.1.10 Speical Loan Proposed Amendment-2',
-            englishUrl: 'F.1.10%20Speical%20Loan%20%20Proposed%20Amendment-2.pdf',
-            marathiUrl: '',
+            title: 'Proposed Amendments 2006-07',
+            circulars: [{
+                content: '<p>The proposed amendments in Bye-Law No.<br>G. 1.7(2)<br>F. 1.5</p>',
+                englishUrl: 'amend2007.pdf',
+                marathiUrl: 'amend2007m.pdf',
+            }]
         }, {
-            content: 'F.1.10. Emergency Loan Proposed Amendment-3',
-            englishUrl: 'F.1.10.%20Emergency%20Loan%20Proposed%20Amendment-3.pdf',
-            marathiUrl: '',
-        }, {
-            content: 'Loan Rule No. 10 Surety libiality Proposed Amendment-4',
-            englishUrl: 'Loan%20Rule%20No.%2010%20Surety%20libiality%20Proposed%20Amendment-4.pdf',
-            marathiUrl: '',
-        }]
-    },{
-        title: 'Proposed Amendments 2006-07',
-        circulars: [{
-            content: '<p>The proposed amendments in Bye-Law No.<br>G. 1.7(2)<br>F. 1.5</p>',
-            englishUrl: 'amend2007.pdf',
-            marathiUrl: 'amend2007m.pdf',
-        }]
-    },{
-        title: 'Proposed Amendments 2004-05',
-        circulars: [{
-            content: 'The proposed amendments in Bye-Law No.<br>F:1.2 (b) <br>F:1.4 (a) <br>H:1.3 <br>I:1.9 </p>',
-            englishUrl: 'amend2005.pdf',
-            marathiUrl: 'amend2005-m.pdf',
-        }]
-    },
-];
+            title: 'Proposed Amendments 2004-05',
+            circulars: [{
+                content: 'The proposed amendments in Bye-Law No.<br>F:1.2 (b) <br>F:1.4 (a) <br>H:1.3 <br>I:1.9 </p>',
+                englishUrl: 'amend2005.pdf',
+                marathiUrl: 'amend2005-m.pdf',
+            }]
+        }, ];
 
     })
     .controller('GalleryCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
