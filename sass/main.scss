@@ -1,6 +1,6 @@
 @import "../bower_components/bourbon/core/bourbon";
 @import "../bower_components/flexslider/flexslider.css";
-@import "../bower_components/font-awesome/css/font-awesome.min.css";
+// @import "../bower_components/font-awesome/css/font-awesome.min.css";
 @import "../bower_components/fancybox/dist/jquery.fancybox";
 @import "../bower_components/swiper/dist/css/swiper.min.css";
 @import "../bower_components/smart-app-banner/smart-app-banner.css";
@@ -160,7 +160,7 @@ header {
 
 .nav-text {
     width: 850px;
-    float: right;
+    margin: 0 auto;
 }
 
 img.loading {
@@ -189,7 +189,7 @@ nav li:hover .dropdown-menu {
 
 .navbar-toggler {
     border: 1px solid $purple;
-    &:focus{
+    &:focus {
         border: 1px solid $purple;
     }
 }
@@ -506,7 +506,7 @@ h1.title {
 }
 
 .ticker1.ticker-managment .list {
-    padding: 11px 20px;
+    padding: 11.5px 20px;
 }
 
 .mb20 {
@@ -627,17 +627,21 @@ h1.title {
     }
 }
 
-.padding-bottom {
-    padding-bottom: 60px;
-}
-
 .content_resalt {
     background-color: #dedede;
     background: rgba(217, 217, 217, 0.15);
 }
 
+.padding-bottom {
+    padding-bottom: 60px;
+}
+
 .paddings {
     padding: 60px 0;
+}
+
+.pb-0 {
+    padding-bottom: 0;
 }
 
 .mr5 {
@@ -859,6 +863,7 @@ h1.title {
     h6 {
         margin-bottom: 2px;
         font-size: 15px;
+        font-weight: bold;
     }
     p {
         color: #2f00ff;
@@ -1077,19 +1082,20 @@ h1.title {
 //     max-height: 400px;
 //     overflow: hidden;
 // }
-
 .nav-up {
     transform: translateY(-100%);
 }
+
 .col-xs-2 {
     width: 20%;
 }
+
 .col-xs-10 {
     width: 80%;
 }
 
-.circular-table{
-    p{
+.circular-table {
+    p {
         margin-bottom: 0;
     }
 }

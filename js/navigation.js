@@ -45,7 +45,7 @@ var navigationservice = angular.module('navigationservice', [])
                 classis: "active",
                 anchor: "reports",
             }, {
-                name: "Audit",
+                name: "Audit Rectification",
                 classis: "active",
                 anchor: "audit"
             }]

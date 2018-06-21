@@ -36,10 +36,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                 name: 'Criteria for loan',
                 links: 'TypeofLoan.pdf'
             }, {
-                name: 'PARMANU SCHEME - Rs. 525/- p.m. @9% within a span of 72 months and earn Rs.50,000/- w.e.f 1.3.2012',
+                name: 'PARMANU SCHEME - Rs. 560/- per month for 72 months to get Rs.50,000/- (w.e.f. Dec.2016)',
                 links: 'int_rate.pdf'
             }, {
-                name: 'LAKHPATI SCHEME - Rs. 1,050/- p.m. @9% within a span of 72 months and earn Rs. 1,00,000/- w.e.f 1.3.2012',
+                name: 'LAKHPATI SCHEME -Rs.1120/- per month  for 72 months to get Rs.1,00,000/- (w.e.f. Dec.2016)',
                 links: 'int_rate.pdf'
             }
 
@@ -115,8 +115,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
         $scope.rules = [{
                 date: 'Model Bye-Laws of Employees Cooperative Societies (2013)',
-                englishUrl: 'Model_Bye-Laws_of_Employees_Cooperative_Societies.pdf',
-                marathiUrl: '',
+                englishUrl: 'bye-laws of society.pdf',
+                marathiUrl: 'Model_Bye-Laws_of_Employees_Cooperative_Societies.pdf',
 
             },
             {
