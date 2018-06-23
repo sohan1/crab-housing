@@ -505,8 +505,15 @@ h1.title {
     }
 }
 
-.ticker1.ticker-managment .list {
-    padding: 11.5px 20px;
+.ticker-managment {
+    height: 456px;
+    overflow: hidden;
+    &.ticker1 {
+        overflow: auto;
+        .list {
+            padding: 11.5px 20px;
+        }
+    }
 }
 
 .mb20 {
@@ -975,7 +982,9 @@ h1.title {
         padding: 10px 20px;
     }
 }
-
+.fnt-12{
+    font-size: 12px;
+}
 .tab-custom {
     .tab-content {
         padding: 15px 0px;
@@ -984,7 +993,15 @@ h1.title {
         background: #2f1f72;
         color: #fff;
         border-radius: 0px;
-        border-right: 1px solid #fff;
+        border: 1px solid #2f1f72;
+    }
+    .nav-tabs .nav-item.active {
+        .nav-link {
+            border: 1px solid #2f1f72;
+            background: #fff;
+            color: #2f1f72;
+            border-radius: 0px;
+        }
     }
 }
 

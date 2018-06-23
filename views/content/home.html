@@ -15,7 +15,7 @@
                     </div>
                     <div class="card">
                         <div class="objectives">
-                            <div class="ticker1 ticker-managment">
+                            <div class="ticker1 ticker-managment min-height-sliders">
                                 <ul class="innerWrap">
                                     <li class="list">To encourage co-operation amongst the members
                                     </li>
@@ -42,13 +42,15 @@
                             </div>
                         </div>
                         <div class="card">
-                            <div class="ticker1" easy-tickers>
-                                <div class="innerWrap">
-                                    <div class="list" ng-repeat="importantLink in importantLinks">
-                                        <a ng-if="importantLink.links" href="{{importantLink.links}}" target="_blank">
-                                            {{importantLink.name}}
-                                        </a>
-                                        <span ng-if="!importantLink.links">{{importantLink.name}}</span>
+                            <div class="ticker-managment min-height-sliders">
+                                <div class="ticker1" easy-tickers>
+                                    <div class="innerWrap">
+                                        <div class="list" ng-repeat="importantLink in importantLinks">
+                                            <a ng-if="importantLink.links" href="{{importantLink.links}}" target="_blank">
+                                                {{importantLink.name}}
+                                            </a>
+                                            <span ng-if="!importantLink.links">{{importantLink.name}}</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
