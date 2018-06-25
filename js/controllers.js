@@ -6,12 +6,50 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
 
-        $scope.mySlides = [
-            // 'img/home-banner/3.jpg',
-            // 'img/home-banner/4.jpg',
-            'img/home-banner/1.jpg',
-            'img/home-banner/2.jpg',
-            'img/home-banner/BARCMUMBAI.jpg',
+        $scope.mySlides = [{
+                image: 'img/home-banner/000.jpg',
+                size: 'auto 100%'
+            },
+            {
+                image: 'img/home-banner/1.jpg',
+                size: 'cover'
+            },
+            {
+                image: 'img/home-banner/2.jpg',
+                size: 'cover'
+            },
+            {
+                image: 'img/home-banner/BARCMUMBAI.jpg',
+                size: 'cover'
+            },
+            {
+                image: 'img/gallery/1.jpg',
+                size: 'cover'
+            },
+            {
+                image: 'img/gallery/2.jpg',
+                size: 'cover'
+            },
+            {
+                image: 'img/gallery/3.jpg',
+                size: 'cover'
+            },
+            {
+                image: 'img/gallery/4.jpg',
+                size: 'cover'
+            },
+            {
+                image: 'img/gallery/5.jpg',
+                size: 'cover'
+            },
+            {
+                image: 'img/gallery/6.jpg',
+                size: 'cover'
+            },
+            {
+                image: 'img/gallery/7.jpg',
+                size: 'cover'
+            }
         ];
         $scope.importantLinks = [{
                 name: '56th ANNUAL REPORT',
@@ -41,6 +79,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             }, {
                 name: 'LAKHPATI SCHEME -Rs.1120/- per month  for 72 months to get Rs.1,00,000/- (w.e.f. Dec.2016)',
                 links: 'int_rate.pdf'
+            }
+            , {
+                name: 'The Bhabha Atomic Research Centre Employees Co-Operative Credit Society is an ISO 2009:2015 certified Society.',
+                links: 'img/ISO_CERTIFICATE.jpg'
             }
 
         ]
@@ -171,27 +213,30 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.oneAtATime = true;
 
         $scope.gallerys = [{
-                title: '2017',
-                details: [{
-                    image: 'img/home-banner/1.jpg',
-                    title: 'Annual Function',
-                }, {
-                    image: 'img/home-banner/2.jpg',
-                    title: 'Annual Function',
-                }]
-            },
-            {
-                title: '2016',
-                details: [{
-                    image: 'img/home-banner/1.jpg',
-                    title: 'Annual Function',
-                }, {
-                    image: 'img/home-banner/2.jpg',
-                    title: 'Annual Function',
-                }]
-
-            }
-        ];
+            title: '2018',
+            details: [{
+                image: 'img/gallery/1.jpg',
+                title: 'Annual Function',
+            }, {
+                image: 'img/gallery/2.jpg',
+                title: 'Annual Function',
+            }, {
+                image: 'img/gallery/3.jpg',
+                title: 'Annual Function',
+            }, {
+                image: 'img/gallery/4.jpg',
+                title: 'Annual Function',
+            }, {
+                image: 'img/gallery/5.jpg',
+                title: 'Annual Function',
+            }, {
+                image: 'img/gallery/6.jpg',
+                title: 'Annual Function',
+            }, {
+                image: 'img/gallery/7.jpg',
+                title: 'Annual Function',
+            }]
+        }];
     })
     .controller('headerctrl', function ($scope, TemplateService) {
         $scope.template = TemplateService;

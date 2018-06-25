@@ -1,6 +1,6 @@
 <div>
     <flex-slider flex-slide="s in mySlides track by $index" prev-text="" next-text="">
-        <li class="min-height-slider" style="background:url({{s}})no-repeat center center;background-size:cover;">
+        <li class="min-height-slider" style="background:url({{s.image}})no-repeat center center;background-size:{{s.size}};">
             <!-- <img ng-src="{{s}}" class="img-fluid"> -->
         </li>
     </flex-slider>
