@@ -21,8 +21,8 @@
                     <uib-tab index="$index + 1" ng-repeat="gallery in gallerys" heading="{{gallery.title}}" disable="tab.disabled">
                         <div class="gallery-tab">
                             <ul class="row list-unstyled">
-                                <li class="col-md-3 mb20" ng-repeat="detail in gallery.details" data-fancybox="images" fancybox ng-href="{{detail.image}}">
-                                    <img src="{{detail.image}}" alt="BARC Employees' Co-Op. Credit Society Ltd." class="full-img">
+                                <li class="col-md-3 mb20" ng-repeat="detail in gallery.details">
+                                  <a  class="fancybox"  rel="gallery1" data-fancybox="images" fancybox ng-href="{{detail.image}}"><img src="{{detail.image}}" alt="BARC Employees' Co-Op. Credit Society Ltd." class="full-img"></a>  
                                 </li>
                             </ul>
                         </div>
