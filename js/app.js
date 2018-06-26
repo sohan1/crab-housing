@@ -85,6 +85,7 @@ firstapp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $lo
         });
     $urlRouterProvider.otherwise("/");
     $locationProvider.html5Mode(isproduction);
+    console.log(isproduction);
 });
 
 
@@ -134,7 +135,6 @@ firstapp.directive('fancybox', function ($document) {
                 },
                 buttons: [
                     "zoom",
-                    "share",
                     "slideShow",
                     "fullScreen",
                     "download",
